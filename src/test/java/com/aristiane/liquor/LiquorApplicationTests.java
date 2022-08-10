@@ -1,0 +1,13 @@
+package com.aristiane.liquor;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class LiquorApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
