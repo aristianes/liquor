@@ -8,5 +8,6 @@ CREATE TABLE CUSTOMER (
 	DISTRICT_CUSTOMER varchar(255),
 	CITY_CUSTOMER varchar(255)
 	);
+
 	
 	

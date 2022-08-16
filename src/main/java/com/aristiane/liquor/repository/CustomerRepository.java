@@ -1,4 +1,4 @@
-package com.aristiane.repository;
+package com.aristiane.liquor.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
