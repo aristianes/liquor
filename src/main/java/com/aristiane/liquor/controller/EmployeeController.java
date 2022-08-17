@@ -11,39 +11,36 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.aristiane.liquor.model.Customer;
-import com.aristiane.liquor.service.CustomerService;
-
+import com.aristiane.liquor.model.Employee;
+import com.aristiane.liquor.service.EmployeeService;
 
 @RestController
-@RequestMapping("/customer")
-public class CustomerController {
+@RequestMapping("/employee")
+public class EmployeeController {
 
 	@Autowired
-	private CustomerService service;
+	private EmployeeService service;
 
 	@PostMapping
-	public Customer save(@RequestBody Customer customer) {
+	public Employee save(@RequestBody Employee employee) {
 
-		this.service.save(customer);
+		this.service.save(employee);
 
-		return customer;
+		return employee;
 
 	}
-	
+
 	@GetMapping
-	public List<Customer> findAll(){
-		
+	public List<Employee> findAll() {
+
 		return this.service.findAll();
-		
+
 	}
 	
 	@DeleteMapping("/{id}")
-	public void delete(@PathVariable long id){
+ public void delete(@PathVariable long id){
 		
 		this.service.delete(id);
 	}
 	
-	
-
 }

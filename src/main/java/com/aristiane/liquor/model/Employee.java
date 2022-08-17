@@ -8,34 +8,25 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "CUSTOMER")
-public class Customer {
+@Table(name = "EMPLOYEE")
+public class Employee {
 
 	@Id
-	@Column(name = "CUSTOMER_ID")
+	@Column(name = "EMPLOYEE_ID")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@Column(name = "FIRST_NAME_CUSTOMER")
+	@Column(name = "FIRST_NAME_EMPLOYEE")
 	private String firstName;
 
-	@Column(name = "LAST_NAME_CUSTOMER")
+	@Column(name = "LAST_NAME_EMPLOYEE")
 	private String lastName;
 
-	@Column(name = "DOCUMENT_CUSTOMER")
+	@Column(name = "DOCUMENT_EMPLOYEE")
 	private String document;
 
-	@Column(name = "ADDRESS_CUSTOMER")
-	private String address;
-
-	@Column(name = "PHONE_CUSTOMER")
+	@Column(name = "PHONE_EMPLOYEE")
 	private String phone;
-
-	@Column(name = "DISTRICT_CUSTOMER")
-	private String district;
-
-	@Column(name = "CITY_CUSTOMER")
-	private String city;
 
 	public Long getId() {
 		return id;
@@ -69,14 +60,6 @@ public class Customer {
 		this.document = document;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
 	public String getPhone() {
 		return phone;
 	}
@@ -84,23 +67,4 @@ public class Customer {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-
-	public String getDistrict() {
-		return district;
-	}
-
-	public void setDistrict(String district) {
-		this.district = district;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	
-	
 }
