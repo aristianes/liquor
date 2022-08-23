@@ -25,3 +25,12 @@ CREATE TABLE CUSTOMER (
 	VALUE_PRODUCT varchar(255),
 	SHOP_PRODUCT varchar(255)
 	);
+	
+	CREATE TABLE SALLER (
+    SALLER_ID int,
+    FIRST_NAME_SALLER varchar(255), 
+    LAST_NAME_SALLER varchar(255),
+	EMAIL_SALLER varchar(255),
+	DOCUMENT_SALLER varchar (255),
+	PHONE_SALLER varchar(255)
+	);
