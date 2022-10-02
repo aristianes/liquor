@@ -1,5 +1,7 @@
 package com.aristiane.liquor.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +13,7 @@ public class StoreService {
 
 	@Autowired
 	private StoreRepository storeRepository;
-	
+
 	public Store save(Store store) {
 
 		this.storeRepository.save(store);
@@ -20,4 +22,12 @@ public class StoreService {
 
 	}
 
+	public List<Store> findAll() {
+
+		return (List<Store>) this.storeRepository.findAll();
+	}
+
+	public void delete(long id) {
+		this.storeRepository.deleteById(id);
+	}
 }
