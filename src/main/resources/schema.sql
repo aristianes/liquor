@@ -34,3 +34,13 @@ CREATE TABLE CUSTOMER (
 	DOCUMENT_SALLER varchar (255),
 	PHONE_SALLER varchar(255)
 	);
+	
+	CREATE TABLE STORE (
+    STORE_ID int,
+    NAME_STORE varchar(255), 
+    ADDRESS_STORE varchar(255),
+	EMAIL_STORE varchar(255),
+	PHONE_STORE varchar(255)
+	);
+	
+	
